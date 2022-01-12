@@ -1,18 +1,18 @@
 <template>
   <div class="app">
     <TopBanner />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HomeBase/>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
 import TopBanner from './components/TopBanner.vue';
+import HomeBase from './components/HomeBase.vue';
 
 @Options({
   components: {
-    HelloWorld,
+    HomeBase,
     TopBanner,
   },
 })
