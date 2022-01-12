@@ -2,10 +2,10 @@
   <div class="top-banner">
     <img alt="Vue logo" src="../assets/Plann_logo.png">
 
-    <button class="">
-    <span>
+    <button class="button-home">
+      <span class="inner-text">
       Home Base
-    </span>
+      </span>
   </button>
   </div>
 </template>
@@ -30,24 +30,27 @@ export default class TopBanner extends Vue {
     height: 60px;
   }
 
-  button {
+  .button-home {
+    color: white;
     border-radius: 10px;
-    padding: 24px 60px;
+    padding: 1.5em 4em;
     background-color: #81C4EE;
-    border: none;
-    text-transform: uppercase;
+    border:none;
+    outline: none;
     cursor: pointer;
-    background-color: #fff;
-  border-color: #fafbff;
-  border-width: 1px;
-  color: #293147;
-  cursor: pointer;
-  justify-content: center;
-  padding-bottom: calc(.5em - 1px);
-  padding-left: 1.75em;
-  padding-right: 1.75em;
-  padding-top: calc(.5em - 1px);
-  text-align: center;
-  white-space: nowrap;
+    text-align: center;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+  .button-home .inner-text {
+    font-weight: 700;
+    font-size: 1.3em;
+    text-transform: uppercase;
+  }
+
+  button:hover {
+    background-color: #67b8eb;
+    outline: 0.18em solid #67b8eb8e;
 }
 </style>
