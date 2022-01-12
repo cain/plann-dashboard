@@ -1,19 +1,19 @@
 <template>
   <div class="app">
     <TopBanner />
-    <HomeBase/>
+    <Dashboard/>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
+import Dashboard from './components/Dashboard.vue';
 import TopBanner from './components/TopBanner.vue';
-import HomeBase from './components/HomeBase.vue';
 
 @Options({
   components: {
-    HomeBase,
     TopBanner,
+    Dashboard,
   },
 })
 export default class App extends Vue {}
@@ -31,4 +31,6 @@ body {
   margin: 0px;
   background-color: #F5F8FF;
 }
+
+@import './assets/styles/plann-theme.css';
 </style>

@@ -1,0 +1,13 @@
+.dark-blue-text {
+    color: #04446B;
+}
+
+.light-blue-text {
+    color: #81C4EE;
+}
+
+.card-style {
+    border-radius: 4px;
+    background-color: white;
+    padding: 30px;
+}

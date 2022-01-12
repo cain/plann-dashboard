@@ -1,19 +1,13 @@
 <template>
   <div class="top-banner">
-    <img alt="Vue logo" src="../assets/Plann_logo.png">
+    <img class="logo-img" alt="Vue logo" src="../assets/Plann_logo.png">
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+import { Vue } from 'vue-class-component';
 
-@Options({
-  props: {
-    msg: String
-  }
-})
 export default class TopBanner extends Vue {
-  msg!: string
 }
 </script>
 
@@ -22,5 +16,9 @@ export default class TopBanner extends Vue {
   .top-banner {
     background-color: white;
     height: 60px;
+  }
+
+  .logo-img {
+    cursor: pointer;
   }
 </style>
