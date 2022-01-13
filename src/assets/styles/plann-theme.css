@@ -18,16 +18,11 @@
     text-transform: uppercase;
 }
 
-.to-do-item-completed {
-    background: #F3FAFA;
-    border: 1px solid rgba(171, 217, 218, 0.38);
-    box-sizing: border-box;
-    border-radius: 16px;
-}
+.flex {
+    display: flex;
+  }
 
-.to-do-item {
-    background: #FEF5F3;
-    border: 1px solid rgba(247, 179, 161, 0.32);
-    box-sizing: border-box;
-    border-radius: 16px;
-}
+  .flex-space {
+    display: flex;
+    justify-content: space-between;
+  }

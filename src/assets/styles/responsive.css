@@ -1,0 +1,26 @@
+ /* Tablet resonsive */
+@media screen and (max-width: 1200px) {
+    .empty-card {
+      display: none;
+    }
+
+    .todo-list{
+        width: 100% !important; 
+        height: 100% !important;
+    }
+}
+
+ /* Mobile phone resonsive */
+@media screen and (max-width: 800px) {
+    .empty-card {
+      display: none;
+    }
+
+    .home-base-button {
+        display: none;
+    }
+
+    .intro-text-large {
+        font-size: 30px !important;
+    }
+}

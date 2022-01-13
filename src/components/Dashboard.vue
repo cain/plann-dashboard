@@ -35,6 +35,7 @@ import axios from 'axios'
     ToDoCard,
   },
   mounted () {
+    /* Get data for ToDo list component */
     axios
       .get('https://jsonplaceholder.typicode.com/todos')
       .then(response => (this.todoData = response.data))
@@ -53,14 +54,5 @@ export default class Dashboard extends Vue {
 
   .cards {
     width: 100%;
-  }
-
-  .flex {
-    display: flex;
-  }
-
-  .flex-space {
-    display: flex;
-    justify-content: space-between;
   }
 </style>

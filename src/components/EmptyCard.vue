@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card empty-card">
 
   </div>
 </template>
@@ -13,6 +13,8 @@ export default class EmptyCard extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+ /* Override plann-theme.css card */
   .card {
     width: 70%;
     height: 120px;
