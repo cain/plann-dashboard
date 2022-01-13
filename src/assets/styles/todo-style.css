@@ -1,0 +1,75 @@
+.todo-list {
+    overflow-y: scroll;
+}
+
+.todo-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+  
+.todo-item-incomplete {
+    background: #FEF5F3;
+    border: 1px solid rgba(247, 179, 161, 0.32);
+}
+  
+.todo-item-complete {
+    background: #F3FAFA;
+    border: 1px solid rgba(171, 217, 218, 0.38);
+}
+  
+.todo-item {
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 15px 20px;
+    margin-bottom: 16px;
+}
+
+.todo-item-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #293246;
+    text-transform: capitalize;
+    
+    /* Only show first line and centre */
+    line-height: 24px;
+    max-height: 24px;
+    overflow:hidden;
+}
+
+.todo-item-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #293246;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    /* 2 times the line-height to show 2 lines */
+    position:relative;
+    line-height:20px;
+    max-height:40px;
+    overflow: hidden;
+}
+
+.todo-see-all {
+    float: right;
+    cursor: pointer;
+    color: #81C4EE;
+    background-color: white;
+}
+
+.todo-img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.todo-item-user {
+    color: #586074;
+    /* Only show first line and centre */
+    line-height: 24px;
+    max-height: 24px;
+    font-weight: 500;
+    overflow:hidden;
+}

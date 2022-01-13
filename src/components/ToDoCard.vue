@@ -1,22 +1,39 @@
 <template>
-  <div class="card">
+  <div class="card todo-list">
     <div class="todo-title dark-blue-text upper-case-text">
       Your to-dos for today
     </div>
   <div v-for="todo in todos" :key="todo.id">
     <div v-if="todo.id <= 5">
       <div v-if="todo.completed">
-        <div v-text="todo.title" class="to-do-item-completed">
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula est lucas.</div>
+        <div class="todo-item todo-item-complete">
+          <div class="flex">
+            <img class="todo-img" src="../assets/images/presentation-icon.svg">
+            <span class="todo-item-title" v-text="todo.title"></span>
+          </div>
+          <div class="todo-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula est lucas.</div>
+          <div class="flex">
+            <img class="todo-img" src="../assets/images/user-icon.svg">
+            <span class="todo-item-user">User Name</span>
+          </div>
         </div>
       </div>
       <div v-else> 
-        <div v-text="todo.title" class="to-do-item">
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula est lucas.</div>
+        <div class="todo-item todo-item-incomplete">
+          <div class="flex">
+            <img class="todo-img" src="../assets/images/mail-icon.svg">
+            <span class="todo-item-title" v-text="todo.title"></span>
+          </div>
+          <div class="todo-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula est lucas.</div>
+            <div class="flex">
+            <img class="todo-img" src="../assets/images/user-icon.svg">
+            <span class="todo-item-user">User Name</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="todo-see-all">See All</div>
   </div>
 </template>
 
@@ -42,12 +59,12 @@ export default class HelloWorld extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.todo-title {
-  font-size: 22px;
-  font-weight: 700;
-}
-  .card {
+
+ /* Override plann-theme.css card */
+.card {
     height: 500px;
     width: 30%;
-  }
+}
+
+@import '../assets/styles/todo-style.css';
 </style>

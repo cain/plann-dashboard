@@ -1,6 +1,6 @@
 <template>
   <div class="top-banner">
-    <img class="logo-img" alt="Vue logo" src="../assets/Plann_logo.png">
+    <img class="logo-img" alt="Vue logo" src="../assets/images/plann-logo.png">
   </div>
 </template>
 

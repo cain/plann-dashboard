@@ -33,4 +33,5 @@ body {
 }
 
 @import './assets/styles/plann-theme.css';
+@import './assets/styles/responsive.css'
 </style>

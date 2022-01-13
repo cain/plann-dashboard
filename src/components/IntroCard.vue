@@ -17,13 +17,15 @@ export default class IntroCard extends Vue {
 <style scoped>
   .intro-text-small {
     font-size: 32px;
+    font-weight: 700;
   }
 
   .intro-text-large {
     font-size: 48px;
+    font-weight: 700;
   }
 
   .card {
-    height: 120px;
+    height: 110px;
   }
 </style>
