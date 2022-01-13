@@ -3,20 +3,40 @@
     <div class="todo-title dark-blue-text upper-case-text">
       Your to-dos for today
     </div>
-    {{todos}}
+  <div v-for="todo in todos" :key="todo.id">
+    <div v-if="todo.id <= 5">
+      <div v-if="todo.completed">
+        <div v-text="todo.title" class="to-do-item-completed">
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula est lucas.</div>
+        </div>
+      </div>
+      <div v-else> 
+        <div v-text="todo.title" class="to-do-item">
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula est lucas.</div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
+    export interface ToDoInterface {
+        userId: number;
+        id: number;
+        title: string;
+        completed: boolean;
+    }
+
 @Options({
   props: {
-    todos: String
+    todos: Array
   }
 })
 export default class HelloWorld extends Vue {
-  todos!: string
+  todos!: Array<ToDoInterface>
 }
 </script>
 
