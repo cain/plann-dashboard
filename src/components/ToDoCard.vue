@@ -33,7 +33,7 @@
       </div>
     </div>
   </div>
-  <div class="todo-see-all">See All</div>
+  <div class="todo-see-all upper-case-text">See All</div>
   </div>
 </template>
 
