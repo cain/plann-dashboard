@@ -1,12 +1,20 @@
 # Plann Dashboard Project
 
-Task:
+## Design decisions:
+ - Considering there is required to be 5 todo items, I have made the todo section scrollable so it will still fit on the screen.
+ - I have made the screen responsive to mobile and tablets by reducing elements (not the best way to do this but suitable for this design)
+ - I have made separate components for each card, although this is not scalable, this is just a small project so this will suffice. (There is a consistent css style for each card but to be more scalable could have used Mixins for re-usable card component)
+ - Tried to keep things simple and not over complicate everthing, again I could have used a css framework such as Bootsrap or Beuify and css pre-processor such as SASS or SCSS but since this is a small project I just kept it simple
 
-Plann is introducing a new dashboard page in 2021. Included in the design folder is a simplified example of the layout. Please build a VueJS app that includes a page with this layout.
+## Further development:
+ - "See All" at the bottom of todo list could show all todo items
+ - Cards showing further information
+ - More useful top banner
+The list keeps going.. if I had more time I would love to keep developing this, deffinitely had fun doing this!
 
-Figma link to the design: https://www.figma.com/file/qGa30JecDkV1ioQ5468ogJ/Jan-2022?node-id=0%3A1
+Figma Design: https://www.figma.com/file/qGa30JecDkV1ioQ5468ogJ/Jan-2022?node-id=0%3A10
 
-Requirements:
+## Requirements:
 
 1.) The app needs to request the TODO items from https://jsonplaceholder.typicode.com/todos to populate the list on the right hand side of the page. Display the 'title' field from the responses as the main body text for the todo item. Please show the first 5 items from the response.
 
@@ -16,12 +24,7 @@ Requirements:
 
 4.) Code comments on custom javascript is encouraged.
 
-
-
-We have included some assets in this folder to help assist you build the project.
-
-
-Some colour values that may be useful:
+## Colours:
 
 #F5F8FF
 #81C4EE
@@ -30,13 +33,3 @@ Some colour values that may be useful:
 #FEF5F3
 #D9EDFA
 #293246
-
-Waving emoji: 👋
-
-
-Thank you and good luck!
-
-
-Plann Team
-
-
