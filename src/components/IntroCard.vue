@@ -1,5 +1,5 @@
 <template>
-  <div class="card-style intro-card">
+  <div class="card">
     <span class="dark-blue-text intro-text-small">Hi </span> 
     <span class="light-blue-text intro-text-small">Christy,</span>
     <div class="dark-blue-text intro-text-large">Welcome back 👋</div>
@@ -23,8 +23,7 @@ export default class IntroCard extends Vue {
     font-size: 48px;
   }
 
-  .intro-card {
-    width: 80%;
+  .card {
     height: 120px;
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="home-base-button">
     <button class="button-home">
-      <span class="inner-text">
+      <span class="inner-text upper-case-text">
       Home Base
       </span>
   </button>
@@ -18,7 +18,8 @@ export default class HomeBase extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .home-base-button {
-    margin-right: 40px;
+    margin: 10px;
+    margin-right: 50px;
   }
 
   .button-home {
@@ -36,7 +37,6 @@ export default class HomeBase extends Vue {
   .button-home .inner-text {
     font-weight: 700;
     font-size: 1.3em;
-    text-transform: uppercase;
   }
 
   button:hover {

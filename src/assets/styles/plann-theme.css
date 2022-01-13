@@ -6,8 +6,28 @@
     color: #81C4EE;
 }
 
-.card-style {
+.card {
     border-radius: 4px;
     background-color: white;
     padding: 30px;
+    margin: 10px;
+    box-shadow: 0px 4px 19px #ECEEF3;
+}
+
+.upper-case-text {
+    text-transform: uppercase;
+}
+
+.to-do-item-completed {
+    background: #F3FAFA;
+    border: 1px solid rgba(171, 217, 218, 0.38);
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.to-do-item {
+    background: #FEF5F3;
+    border: 1px solid rgba(247, 179, 161, 0.32);
+    box-sizing: border-box;
+    border-radius: 16px;
 }
