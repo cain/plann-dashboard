@@ -6,7 +6,7 @@
       <IntroCard/>
       <div class="flex">
         <EmptyCard/>
-        <ToDoCard/>
+        <ToDoCard :todos="todoData" />
         </div>
     </div>
     </div>
@@ -19,15 +19,27 @@ import HomeBase from '../components/HomeBase.vue';
 import IntroCard from '../components/IntroCard.vue';
 import EmptyCard from '../components/EmptyCard.vue';
 import ToDoCard from '../components/ToDoCard.vue';
+import axios from 'axios'
 
 
 @Options({
+  data() {
+    return {
+      todoData: null
+    }
+  },
   components: {
     HomeBase,
     IntroCard,
     EmptyCard,
     ToDoCard,
   },
+  mounted () {
+    axios
+      .get('https://jsonplaceholder.typicode.com/todos')
+      .then(response => (this.todoData = response.data))
+      .catch(error => console.log(error))
+  }
 })
 export default class Dashboard extends Vue {
 }

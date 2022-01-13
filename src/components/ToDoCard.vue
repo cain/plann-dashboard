@@ -3,13 +3,20 @@
     <div class="todo-title dark-blue-text upper-case-text">
       Your to-dos for today
     </div>
+    {{todos}}
   </div>
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-class-component';
+import { Options, Vue } from 'vue-class-component';
 
-export default class ToDoCard extends Vue {
+@Options({
+  props: {
+    todos: String
+  }
+})
+export default class HelloWorld extends Vue {
+  todos!: string
 }
 </script>
 
